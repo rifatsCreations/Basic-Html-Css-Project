@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+
+.box{
+            width: 200px;
+            height: 100px;
+            background-color: lightpink;
+            border: 5px solid blue;
+            margin: 30px;
+            box-sizing: border-box;
+            line-height: 100px;
+            text-align: center;
+            font-size: 20px;
+            color: maroon;
+        }
+        .box-content{
+            background-color: lightskyblue;
+            padding: 10px;
+            border: 2px dashed grey;
+            margin: 10px;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+
+        }
+        main{
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: darkseagreen;
+        }
+
+        #parent{
+            border: 1px solid rgb(24, 23, 23);
+            background-color: rgb(107, 43, 32);
+            color: whitesmoke;
+        }
+        #child{
+            border: 1px solid rgb(255, 250, 250);
+             margin: 50px 30px;
+        }
+
+
+
+
+        #my-element{
+                width:200px;
+                height:200px;
+                padding:10px;
+                border:5px solid rgb(19, 96, 158);
+                margin:8px;
+                box-sizing:border-box;
+            }
+
+            #my-element2{
+                width:200px;
+                height:200px;
+                padding:10px;
+                border:5px solid rgb(80, 25, 25);
+                margin:8px;
+                box-sizing:content-box;
+                border-radius: 10px;
+            }
+
+           
+
+        h3{
+            outline: 5px dotted rgb(21, 99, 145) ;
+            border: 1px solid rgb(255, 32, 32);
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+     <nav style="background:#f0f0f0; padding:10px;">
+         <a href="index.html" style="background:#e0e0ff; color:blue; padding:5px 10px; text-decoration:none; border-radius:4px;">Home</a>
+        </nav>
+        
+    <Header>
+        <h1 style="text-align: center;">Chapter 14</h1><br><br>
+        </Header>
+
+        <main>
+
+
+            <h2>Box Model Demonstration</h2>
+            <div class="container">
+                <div class="box">
+        
+        
+                 <div class="box-content">Image</div>
+        
+        
+                </div>
+        
+                <div class="box">
+                    <div class="box-content">Video</div>
+        
+                </div>
+            </div>
+            <p>This example demonstrate the CSS BOX MODEL</p>
+            <ul>
+                <li><b>Content: </b> The actual content of the element(Text,image,etc...)</li>
+        
+                <li><b>Padding: </b> The space between the content and the border</li>
+                
+                <li><b>Border: </b> The Line between the content and the border</li>
+                
+                <li><b>Margin: </b> The space outside the cborder,between the element and other elementa</li>
+            </ul>
+        </main><br><br><hr>
+
+
+           <div id="parent">
+
+            <div id="child">
+                If everything was perfect you would never learn and you would never grow
+            </div>
+        
+            </div><br><hr>
+
+
+
+            <div>
+            <pre id="my-element">
+            </pre>
+            <span></span><br><hr>
+           </div>
+             
+              <div>
+            <pre id="my-element2">
+       
+            </pre>
+            <span ></span>
+        </div><br><hr>
+
+        
+            <h3>Art is a lie that makes us realize truth.</h3><br><br><br>
+        
+
+        
+
+
+
+            
+        
+
+        <a  href="Chapter 13.Html" style="position: fixed; bottom: 20px; left: 20px; font-size: large; font-style: italic; font-family:'Trebuchet MS'; color: cadetblue;text-decoration: none;">Previous</a>
+
+        <a  href="Chapter 15.Html" style="position: fixed; bottom: 20px; right: 20px; font-size: large;font-style: italic; font-family:'Trebuchet MS'; color: maroon;text-decoration: none;">Next</a>
+    
+</body>
+</html>

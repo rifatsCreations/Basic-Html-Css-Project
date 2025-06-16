@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+
+    <style>
+
+.grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+            column-gap: 10px;
+            row-gap: 10px;
+            justify-content: center;
+            border: 1px solid black;
+        }
+        .grid-item{
+            border: 1px solid rgb(194, 224, 19);
+        }
+
+        container1 {
+        border: 1px solid rgb(59, 177, 122);
+        width: 300px;
+        height: 100px;
+        }
+        .child1 {
+        float: right;
+        border: 1px solid rgb(236, 255, 67);
+        }
+
+        .p1 {
+        text-decoration-line: overline;
+        }
+       
+        .p1{
+            text-transform: capitalize;
+        }
+        .p2{
+            text-transform: lowercase;
+        }
+
+
+        .positioned{
+            position: relative;
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        .nonpositioned{
+            border: 1px dashed black;
+            width: 150px;
+            height: 150px;
+        }
+        .absolute{
+            position: absolute;
+            border: 1px dashed rgb(179, 85, 23);
+            background-color: white;
+            right: 30px;
+            top: 30px;
+        }
+
+
+        .parent{
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+        }
+        .sticky{
+            position: sticky;
+            top: 0;
+            border: 1px solid rgb(85, 180, 197);
+            background-color: rgb(233, 45, 12);
+            color: aliceblue;
+        }
+
+
+        .parent1{
+        height: 200px;
+        width: 200px;
+        border: 1px dashed rgb(117, 46, 46);
+     }
+     .normal1{
+        border: 1px dashed rgb(255, 251, 0);
+     }
+     .relative1{
+        border: 1px solid rgb(147, 64, 202);
+        position: relative;
+        left: 30px;
+        top: 30px;
+     }
+
+
+        .big {
+            height: 400px;
+            border: 1px solid black;
+            }
+        .fixed {
+            position: fixed;
+            right: 30px;
+            top: 30px;
+            width: 100px;
+            border: 1px solid rgb(243, 106, 232);
+            }
+
+            .flex-container{
+            display: flex;
+            
+           flex-wrap: wrap;
+           align-content: flex-start;
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+            gap: 10px;
+        }
+        .flex-item{
+            border: 1px solid rgb(85, 87, 211);
+            flex-basis: 120px;
+        }
+
+
+
+
+        #container{
+            border: 1px solid black;
+        }
+        .container{
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+       .child{
+        width: 100px;
+        height: 100px;
+        background-color: white;
+       }
+       .absolute{
+        position: absolute;
+        border: 1px solid red;
+        text-align: right;
+       }
+       .z-index-minus-two{
+        z-index: -2;
+        left: 100px;
+        top: 5px;
+       }
+       .z-index-minus-one{
+        z-index: -1;
+        left: 70px;
+        top: 35px;
+       }
+       .z-index-zero{
+        z-index: 0;
+        left: 40px;
+        top: 65px;
+       }
+       .z-index-one{
+        z-index: 1;
+        left: 10px;
+        top: 95px;
+       }
+       .z-index-two{
+        z-index: 2;
+       }
+
+
+      
+
+
+    </style>
+</head>
+<body>
+     <nav style="background:#f0f0f0; padding:10px;">
+         <a href="index.html" style="background:#e0e0ff; color:blue; padding:5px 10px; text-decoration:none; border-radius:4px;">Home</a>
+        </nav>
+        
+    <Header>
+        <h1 style="text-align: center;">Chapter 19</h1><br><br>
+        </Header>
+
+        <main>
+
+            <div class="grid-container">
+                <div class="grid-item item1">Day 1</div>
+                <div class="grid-item item2">Day 2</div>
+                <div class="grid-item item3">Day 3</div>
+                <div class="grid-item item4">Day 4</div>
+                <div class="grid-item item5">Day 5</div>
+                <div class="grid-item item6">Day 6</div>
+                <div class="grid-item item7">Day 7</div>
+                <div class="grid-item item8">Day 8</div>
+                <div class="grid-item item9">Day 9</div>
+                <div class="grid-item item7">Day 10</div>
+                <div class="grid-item item8">Day 11</div>
+                <div class="grid-item item9">Day 12</div>
+                </div><br><br><br><hr>
+
+                <div class="container1">
+                    <div class="child1"> 1st Number  </div>
+                    <div class="child1"> 2nd Number</div>
+                    </div><br><br><br><hr><br><br>
+
+                    <div><p class="p1">This is the 1st paragraph.</p>
+                        <p class="p2">This is the 1st paragraph.</p><br><br><br><hr><br><br>
+                    </div>
+
+                <div class="positioned">Positioned
+                    <div class="nonpositioned">Nonpositioned</div>
+                    <div class="absolute"> Absolute</div>
+                </div><br><br><br><hr>
+
+                <div class="parent">
+                    <p>Try to scroll inside this frame to understand how sticky
+                    positioning works.</p>
+                    <div class="sticky">Life!</div>
+                    <p>There are no great limits to growth because there are no limits of human intelligence, imagination, and wonder.</p>
+                    <p>What you’re supposed to do when you don’t like a thing is change it. If you can’t change it, change the way you think about it. Don’t complain.</p>
+                    <p>Those who have wrought great changes in the world never succeeded by gaining over chiefs; but always by exciting the multitude. The first is the resource of intrigue and produces only secondary results, the second is the resort of genius and transforms the universe.</p>
+                    </div><br><br><br><hr><br><br>
+
+                    <div class="parent1">
+                        <div class="normal1">Normal </div>
+                        <div class="relative1"> Relative</div>
+                
+                    </div><br><br><hr><br><br>
+                    <br><br><br><br><br>
+
+
+
+                <div>Title Element</div>
+                <div class="fixed">Parmanent!</div>
+                <div class="big">Large Element.</div><br><br><br><hr>
+
+                    <div class="flex-container">
+                    <div class="flex-item item1">Flex Number 1</div>
+                    <div class="flex-item item2">Flex Number 2</div>
+                    <div class="flex-item item3">Flex Number 3</div>
+                  
+                    </div><br><br><br><hr>
+
+
+
+                    <div id="container" class="container">
+                        <div class="absolute child z-index-minus-two">z-index: -2</div>
+                        <div class="absolute child z-index-minus-one">z-index: -1</div>
+                        <div class="absolute child z-index-zero">z-index: 0</div>
+                        <div class="absolute child z-index-one">z-index: 1</div>
+                        <div class="child z-index-two">z-index: 2; but I'm not
+                        positioned</div>
+
+
+                        
+
+
+
+
+
+
+
+            
+        </main>
+
+
+        <a  href="Chapter 18.Html" style="position: fixed; bottom: 20px; left: 20px; font-size: large; font-style: italic; font-family:'Trebuchet MS'; color: cadetblue;text-decoration: none;">Previous</a>
+
+        <a  href="Chapter 20.Html" style="position: fixed; bottom: 20px; right: 20px; font-size: large;font-style: italic; font-family:'Trebuchet MS'; color: maroon;text-decoration: none;">Next</a>
+    
+</body>
+</html>

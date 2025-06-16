@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds</title>
+
+    <style>
+
+.sprite{
+            background-image: url('image/The\ Batman.avif');
+            height: 150px;
+            width: 150px;
+            margin: 5px;
+            display: inline-block;
+        }
+    
+    
+        .testing{
+            background-position: -10px -10px;
+        }
+        .number-1{
+            background-position: 0 0;
+        }
+        .number-2{
+            background-position: -50px 0;
+        }
+        .number-3{
+            background-position:-300px -50px;
+        }
+        .number-4{
+            background-position: 10px -50px;
+        }
+        .number-5{
+            background-position: -300px -20px;
+        }
+        .number-6{
+            background-position: -100px -20px;
+        }
+        .number-7{
+            background-position: 150 -50px;
+        }
+        .number-8{
+            background-position: -250px -30px;
+        }
+        .number-9{
+            background-position: -300px -50px;
+        }
+
+
+        .radial{
+            height: 250px;
+            width: 250px;
+          
+            background:  repeating-radial-gradient(green,yellow 5%, red 10%);
+        }
+
+        .linear {
+        height: 100px;
+        background: linear-gradient(rgb(5, 168, 67), yellow);
+        }
+
+           .bg {
+            border: 5px dotted rgb(95, 10, 10);
+            padding: 10px;
+            background: rgb(91, 163, 168);
+            }
+            .padding {
+            background-clip: padding-box;
+            }
+            .content {
+            background-clip: content-box;
+            }
+
+
+
+        body{
+        margin: 0;
+      }
+      h2{
+        height: 60px;
+      }
+      .fixed{
+        background-position: center 60px;
+        height: 200px;
+        
+       
+        background-image: url("image/Tom\ &\ Jerry.webp");
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+      }
+     
+      article{
+        width: 220px;
+        height: 200px;
+        overflow: auto;
+        border: 1px solid black;
+        background-image: url("image/beyblade.jpg.jpg");
+        background-repeat: repeat-x;
+        background-attachment: local;
+      }
+
+
+
+        .navlist li{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        float: left;
+      }  
+      .navlist li,
+      .navlist a{
+        display: block;
+        height: 150px;
+        width: 250px;      
+        }
+
+        .sprite1{
+            background-image: url("image/lego\ batman.webp");
+        }
+        .home{
+            background-position: 0 0;
+        }
+        .home:hover{
+            background-position: 0 -50px;
+        }
+        .prev{
+            background-position:-50px 0 ;
+        }
+        .prev:hover{
+            background-position:-50px -50px;
+        }
+
+        .next{
+            background-position:-100px 0 ;
+        }
+        .next:hover{
+            background-position:-100px -50px;
+        }
+
+        footer {
+        height: 50px;
+        background-color: rgb(235, 213, 14);
+        text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+     <nav style="background:#f0f0f0; padding:10px;">
+         <a href="index.html" style="background:#e0e0ff; color:blue; padding:5px 10px; text-decoration:none; border-radius:4px;">Home</a>
+        </nav>
+        
+    <Header>
+        <h1 style="text-align: center;">Chapter 17</h1><br><br>
+        </Header>
+
+        <main>
+
+            <ul class="navlist">
+                <li class="sprite1 home"><a href="#home">Home</a></li>
+                <li class="sprite1 prev"><a href="#prev">Prev</a></li>
+                <li class="sprite1 next"><a href="#next">Next</a></li>
+            </ul><br><br><br><br><br><br><br><br><br><br><br><br><hr><br><br>
+
+            <div class="sprite testing"></div>
+            <div class="sprite number-1"></div>
+            <div class="sprite number-2"></div>
+            <div class="sprite number-3"></div>
+            <div class="sprite number-4"></div>
+            <div class="sprite number-5"></div>
+            <div class="sprite number-6"></div>
+            <div class="sprite number-7"></div>
+            <div class="sprite number-8"></div>
+            <div class="sprite number-9"></div><br><br><br><hr><br><br>
+
+
+            <p class="radial">This is a Gradients</p><br><br><br><hr><br><br>
+
+
+            <p class="linear">This is a Gradients</p><br><br><br><hr><br><br>
+
+
+                
+                <p class="bg">For how tiny the world,
+                    This ant's egg-and the sky!</p>
+                
+                <p class="bg padding">The world is a playground.</p>
+                
+                <p class="bg content">The world is a playground.</p><br><br><br><hr><br><br>
+
+
+           
+             
+
+            <h2>Tom And Jerry</h2><br>
+            <div class="fixed"></div><br><br><br><hr><br><br>
+             <article>"Tom and Jerry" is a classic animated cartoon series featuring a mischievous mouse named Jerry constantly outsmarting a scheming cat named Tom, resulting in comical chases and slapstick battles, with the core humor coming from their never-ending pursuit of one another, usually without dialogue; created by William Hanna and Joseph Barbera, the series is known for its iconic visual gags and often exaggerated violence where the characters always recover from their injuries. </article><br><br><br><hr><br><br>
+
+
+           
+              
+
+                <footer>Footer</footer>
+
+            
+
+
+
+
+            
+        </main>
+
+
+        <a  href="Chapter 16.Html" style="position: fixed; bottom: 20px; left: 20px; font-size: large; font-style: italic; font-family:'Trebuchet MS'; color: cadetblue;text-decoration: none;">Previous</a>
+
+        <a  href="Chapter 18.Html" style="position: fixed; bottom: 20px; right: 20px; font-size: large;font-style: italic; font-family:'Trebuchet MS'; color: maroon;text-decoration: none;">Next</a>
+    
+</body>
+</html>

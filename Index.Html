@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project : Html And Css</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body{
+            background-image: url(Image/liana-s-xII47uJwU_0-unsplash.jpg);
+            background-size: cover;
+            background-position: contain;
+            background-attachment: fixed;
+            opacity: 0.8;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+           flex-direction: column;       
+           
+        }
+   
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+           display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            color: white;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 200px; 
+            height: 90px;
+            margin-right: -60px;
+           margin-top: -20px;
+           margin-left: -50px;
+           
+             
+        }
+    .container {
+    display: flex;
+    flex-grow: 1;
+   
+}
+.sidebar {
+    width: 148px;
+    height: 100vh;
+    background-color: rgb(75, 36, 36);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+   
+}
+
+
+.sidebar a, .dropbtn { 
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px 15px; 
+  display: block;
+  transition: background-color 0.3s ease;
+  border: none; 
+  background: none; 
+  cursor: pointer; 
+  width: 100%; 
+  text-align: left; 
+  font-family: 'Trebuchet MS';
+  font-size: large;
+  
+  
+  
+  
+}
+
+
+nav a:hover, .dropbtn:hover {
+  background-color:  rgb(75, 36, 36);
+  border-radius: 10px;
+  color: rgb(243, 243, 243);
+  font-size: medium;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  rgba(255, 251, 251, 0.89);
+  min-width: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(255, 232, 232, 0.808);
+  z-index: 1;
+  left: 0; 
+  top: 100%; 
+}
+
+.sidebar li:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content a {
+  color:  rgb(75, 36, 36);
+  font-family: 'Trebuchet MS';
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: small;
+}
+
+.dropdown-content a:hover {
+  background-color:  rgba(75, 36, 36, 0.63);
+}
+
+.dropdown-content {
+    left: 0; 
+    top: 100%;
+  }
+
+  nav {
+    width: 100%; 
+    height: auto; 
+    border-right: none; 
+    border-bottom: 1px solid rgb(75, 36, 36);
+     
+    
+  }
+
+  nav {
+  border-right: 1px solid  rgb(88, 73, 73);
+  box-shadow: 2px 2px 2px 2px whitesmoke;
+  
+  
+}
+
+nav {
+  background-color: #494949;
+  color:  rgb(75, 36, 36);
+  padding: 20px; 
+  width: 200px; 
+  height: 100vh;
+  overflow-y: auto; 
+  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav li {
+  position: relative;
+  
+}
+
+
+
+
+
+article h1, article h3, article p {
+    text-align: center;
+    margin-left: 150px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: rgb(75, 36, 36);
+    background: whitesmoke;
+    box-shadow: 0px 0.5px 10px 2px rgba(255, 232, 232, 0.808)  ;  
+    transition: width 3s;
+
+}
+
+article h1 {
+    height: 50px;
+    margin-bottom: 10px;
+    width: 260px;
+    
+}
+
+article h1:hover {
+    width: 600px;
+}
+
+article h3 {
+    height: 35px;
+    margin-bottom: 5px;
+    width: 220px;
+}
+
+article h3:hover {
+    width: 500px;
+}
+
+article p {
+    height: 25px;
+    margin-top: 12px;
+    width: 190px;
+    margin-bottom: 100px;
+}
+
+article p:hover {
+    width: 350px
+}
+
+.fa-facebook{
+    font-size: 30px;
+    color: rgb(0, 139, 194);
+    margin-bottom: 15px;
+    margin-right: 10px;
+    background-color: #fff;
+    border-radius: 100px;
+    
+}
+
+.fa-whatsapp{
+    font-size: 30px;
+    color: rgb(12, 161, 45);
+    margin-bottom: 15px;
+    margin-right: 10px;
+   
+}
+.fa-instagram{
+    font-size: 30px;
+    color: hotpink;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.fa-x-twitter{
+    font-size: 30px;
+    color: rgb(8, 99, 184);
+    margin-bottom: 15px;
+    margin-right: 0;
+}
+
+.login-wrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+  }
+
+
+.aside
+{
+ padding: 20px;
+ box-shadow: 0px 0.5px 10px 2px rgba(255, 232, 232, 0.808)                  
+}
+      
+        .div100{
+            margin-bottom: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+       
+        .div45l{
+            width: 45%;
+            float: left;
+            margin-left: 2px;
+            color: whitesmoke;
+        }
+        .div45r{
+            width: 45%;
+            float: right;
+            margin-right: 10px;
+            color: whitesmoke;
+        }
+
+       
+        .inputStyle{
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            background-color: #fff;
+            border: none;
+            
+        }
+        
+        .btn{
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 15px;
+            width: 100%;
+            background-color: #fff;
+            border: none;
+            margin-top: 10px;
+            color: #fff;
+            
+        }
+        .name{
+            width: 70%;
+            margin-bottom: 10px;
+              
+        }
+        .password{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+
+
+        footer {
+            width: 100%;
+            text-align: center;
+           
+            color: white;
+            padding: 3px 0;
+            
+        }
+
+
+
+</style>
+</head>
+
+<body >
+   
+
+    <header><h1 style="color: whitesmoke; text-align: center; margin-bottom: 20px; margin-top: 5px ;  box-shadow: 0px px 8px 8px rgba(255, 232, 232, 0.808); font-family:  'Trebuchet MS';">IsDB-BISEW</h1>
+    <img src="Image/Isdb_Biswe-removebg-preview.png"  ></header>
+
+
+    <div class="container">
+
+        <nav class="sidebar">
+            <h3 style="margin-bottom: 25px; box-shadow: 0px 0.5px 4px 2px rgba(255, 232, 232, 0.808) ;padding: 5px;">Menu</h3>
+            <ul>
+                <li class="dropdown"><button class="dropbtn">Html &#9662;</button>
+
+                    <div class="dropdown-content">
+                        <a href="Chapter 1.Html">Chapter 1</a>
+                        <a href="Chapter 2.Html">Chapter 2</a>
+                        <a href="Chapter 3.Html">Chapter 3</a>
+                        <a href="Chapter 4.Html">Chapter 4</a>
+                        <a href="Chapter 5.Html">Chapter 5</a>
+                        <a href="Chapter 6.Html">Chapter 6</a>
+                        <a href="Chapter 7.Html">Chapter 7</a>
+                        <a href="Chapter 8.Html">Chapter 8</a>
+                    </div>
+                
+                </li>
+                    
+                <li class="dropdown"><button class="dropbtn" style="margin-bottom: 330px;">Css &#9662;</button>
+
+                    <div class="dropdown-content">
+                        <a href="Chapter 11.Html">Chapter 11</a>
+                        <a href="Chapter 12.Html">Chapter 12</a>
+                        <a href="Chapter 13.Html">Chapter 13</a>
+                        <a href="Chapter 14.Html">Chapter 14</a>
+                        <a href="Chapter 15.Html">Chapter 15</a>
+                        <a href="Chapter 16.Html">Chapter 16</a>
+                        <a href="Chapter 17.Html">Chapter 17</a>
+                        <a href="Chapter 18.Html">Chapter 18</a>
+                        <a href="Chapter 19.Html">Chapter 19</a>
+                        <a href="Chapter 20.Html">Chapter 20</a>
+                        <a href="Chapter 21.Html">Chapter 21</a>
+                        <a href="Chapter 22.Html">Chapter 22</a>
+                    </div>
+
+
+                 
+                
+                </li>
+
+                <li class="dropdown"><a style="margin-top: 20px; margin-right: 35px;font-size: medium; margin-bottom: 10px; box-shadow: 0px 0.5px 4px 2px rgba(255, 232, 232, 0.808)"  href="">Contact </a> </li>
+
+                <li class="dropdown"><a style=" margin-right: 25px; font-size: medium;box-shadow: 0px 0.5px 4px 2px rgba(255, 232, 232, 0.808)"  href="">Services </a> </li>
+                
+            </ul>
+        </nav>
+
+
+    <main>
+            <article>
+                
+                <h1>Project: Html And Css</h1>
+                              
+            </article>
+
+            
+
+            
+
+            
+
+            <div class="login-wrapper">
+            <aside id="aside" class="aside">
+           
+                <h2 style="text-align: center; color: whitesmoke; margin-bottom: 10px;">User Login</h2>
+                <form  action="" method="POST"  >
+
+
+                <div class="div100">
+               
+                <div class="name">
+                    <p ><label for="Name" style="color: whitesmoke;">User Name</label></p>
+                    <p><input  type="text" id="Name" name="Name" required class="inputStyle" placeholder="User Name"></p>
+                </div>
+                
+                <div class="password">
+                    <p><label for="password" style="color: whitesmoke;">Password</label></p>
+                    <p><input type="password" id="password" name="password" required class="inputStyle" placeholder="Enter your 8 digits password"></p>
+                </div>   
+                
+                </div>
+            
+
+                   
+                  <div class="div100">
+                  <div class="div45r">
+                     <p><label for="tsp" >Tsp</label></p>
+
+                     <select style="width: 100%; padding: 5px; border: none; border-radius: 5px; margin-bottom: 10px;">
+                     <option value="" selected>Pntl</option>
+                     <option value="" selected>Scsl</option> 
+                     
+                    </select>
+                    </div>
+
+                    <div class="div45l">
+                        <p><label for="roll number" >Trainee ID</label>
+                        <p> <input type="text" name="roll number" required class="inputStyle" style="
+                        margin-bottom: 10px;"></p>
+                        </p>
+
+                    </div>
+                    </div>
+
+                     <div class="div100">
+                    <div class="div45r">
+                        <p><label for="round">Round</label></p>
+                        <select style="width: 100%; padding: 5px; border: none; border-radius: 5px;">
+                            <option value="" selected> 61</option>
+                            <option value="" selected>63</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="div45r">
+                        <p><label for="module" style="margin-top: 10px;" >Module</label></p>
+                        <select name="module" style="padding: 5px; border: none; border-radius: 5px; width: 100%; ">
+                          <optgroup label="CSS" >
+  
+                          <option>Html & Css</option>
+                           <option>C Sharp</option>
+                           <option>Sql</option>
+                          </optgroup>
+                                                   
+                        </select>
+                   </div>
+
+                </div>
+
+                      <div class="div100">                 
+                     <div class="div45l">
+                     <button type="reset" class="btn" style=" background-color:rgb(146, 138, 138)" >Reset</button>
+                     </div>
+                     <div class="div45r">
+                     <button type="submit" class="btn" style="background-color:rgb(133, 78, 78)">Login</button>
+                     </div>
+
+                     <button type="submit" class="btn" style="background-color:rgb(100, 48, 48);"><a style="color: whitesmoke; text-decoration: none; font-family: 'Trebuchet MS';" href="">Register</a></button>
+
+                        
+                    </div> 
+                     
+                </form>
+           
+        </aside>
+    </div>
+        </main>
+    </div>
+
+    
+
+    <footer>
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+        <p>&copy; 2025 IsDB-BISEW</p>
+    </footer>
+   
+</body>
+</html> 

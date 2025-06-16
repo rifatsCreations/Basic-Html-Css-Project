@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS</title>
+    <style>
+        :root {
+--a-global-color: red;
+}
+section {
+--a-local-color: blue;
+}
+header {
+color: var(--a-global-color);
+}
+footer {
+color: var(--a-local-color);
+}
+
+h3,
+footer {
+height: 30px;
+line-height: 30px;
+}
+h3 {
+border-bottom: 1px solid black;
+}
+ #CalculationFooter{
+border-top: 1px solid black;
+text-align: center;
+}
+.main-content {
+min-height: calc(100vh - 96px);
+}
+.long-content {
+border: 1px solid #ccc;
+height: 500px;
+}
+
+div {
+font-size: 12px;
+counter-reset: my-section;
+}
+h1 {
+counter-reset: my-sub-section;
+}
+
+h2::before {
+counter-increment: my-sub-section;
+content: counter(my-section) "." counter(my-sub-section) " ";
+}
+
+    </style>
+</head>
+ <nav style="background:#f0f0f0; padding:10px;">
+         <a href="index.html" style="background:#e0e0ff; color:blue; padding:5px 10px; text-decoration:none; border-radius:4px;">Home</a>
+        </nav>
+
+<body>
+    
+        <h1 style="text-align: center;">Chapter 21</h1><br><br>
+        
+
+        <main>
+
+            <!-- Variables -->
+
+            <section>
+                <header>
+                <h2>Hello! New Bangladesh</h2>
+                </header>
+
+                <p>"Bangladesh, officially the People's Republic of Bangladesh, is a country in South Asia."</p>
+
+                <footer>
+                <p>Contact us </p>
+                </footer>
+
+                </section>
+
+                <footer>
+                <p> Copyright © 2025</p>
+                </footer><br><hr>
+
+                <!-- Calculation -->
+
+                 
+                <h3>Chapter</h3>
+                <div class="main-content">
+                <p class="paragraph">Title</p>
+                <p class="long-content">Description</p>
+                </div>
+                <footer id="CalculationFooter">Copyright © 2025</footer>
+
+
+                <!-- Counters -->
+               
+
+                <div>
+                    
+                    <h1>Vehicle tutorials:</h1>
+                    <h2>Car Tutorial</h2>
+                    <h2>Motorcycle Tutorial</h2>
+                    <h1>Online tutorials:</h1>
+                    <h2>Facebook</h2>
+                    <h2>Youtube</h2>
+                </div><br><br><br><br>
+
+
+
+        </main>
+
+
+        <a  href="Chapter 20.Html" style="position: fixed; bottom: 20px; left: 20px; font-size: large; font-style: italic; font-family:'Trebuchet MS'; color: cadetblue;text-decoration: none;">Previous Chapter</a>
+
+                          
+        <a  href="Chapter 22.Html" style="position: fixed; bottom: 20px; right: 20px; font-size: large;font-style: italic; font-family:'Trebuchet MS'; color: maroon;text-decoration: none;">Next Chapter</a>
+    
+</body>
+</html>

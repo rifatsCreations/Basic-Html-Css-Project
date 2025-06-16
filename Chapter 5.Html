@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Forms</title>
+</head>
+<body>
+     <nav style="background:#f0f0f0; padding:10px;">
+         <a href="index.html" style="background:#e0e0ff; color:blue; padding:5px 10px; text-decoration:none; border-radius:4px;">Home</a>
+        </nav>
+        
+    <h1 style="text-align: center;">Chapter 5</h1><br><br>
+    <main>
+        <form method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend><b>Login Form</b></legend><br>
+
+            <div style="margin-bottom: 20px;font-family: 'Trebuchet MS';" >
+                <label >Choose Your Character</label>
+                <select name="Fiction" id="Fiction" >
+                    <option value="" >Select</option>
+                    <option value="batman">Bat Man</option>
+                    <option value="spider man">Spider-Man</option>
+                    <option value="doctor doom">Doctor Strange</option>
+                    <option value="winter soldier">Winter Soldier</option>
+                    <option value="deapool">DeadPool</option>
+                    <option value="iron man">Iron Man</option>
+                </select>
+            </div>
+
+            <div style="margin-bottom: 20px; font-family: 'Trebuchet MS';">
+                <label>Set Your Power(Between 1 To 100):</label>
+                <input type="range" id="pointInputId" value="24" min="1" max="100" 
+                oninput="pointOutputId.value=pointInputId.value">
+                <output id="pointOutputId">24</output>
+            </div>
+
+            <input style="font-family: 'Trebuchet MS';" type="file" name="bgimage" /><br><br>
+
+            <label for="ogDate">Origin Date</label>
+            <input id="ogDate" type="date" name="ogDate"><br><br>
+
+            <label for="ogTime">Origin Time</label>
+            <input id="ogTime" type="time" name="ogTime"><br><br>
+
+            <label for="ogDate">Origin Date</label>
+            <input id="ogDate" type="datetime-local" name="ogDate"><br><br>
+
+            <label>Costume Color</label>
+            <input type="color" name="bgcolor"><br><br>
+
+            <label>Select Abilities: </label>
+            <input type="checkbox" id="abilities" name="Fly" value="Fly"><label>Fly</label>
+            <input type="checkbox" id="abilities" name="Speed" value="Speed"><label>Speed</label>
+            <input type="checkbox" id="abilities" name="Magic" value="Magic"><label>Magic</label><br><br>
+    
+            <label>Select Gender</label>
+            <input type="radio" id="gender" name="gender" value="Male"><label>Male</label>
+            <input type="radio" id="gender" name="gender" value="Female"><label>Female</label><br><br>
+
+
+            <label for="Name" >Name :</label>
+            <input style="margin-bottom: 10px;" type="text" id="name" name="name" placeholder="Enter Your Name" autofocus><br>
+
+            <label for="password">Password  :</label>
+            <input style="margin-bottom: 10px;" type="password" id="password" name="password" placeholder="Enter password" required><br>
+
+
+            <label for="confirm_password">Confirm   :</label>
+            <input style="margin-bottom: 10px;" type="password" id="confirm_password" name="confirm_password"><br><br>
+
+            <span id="passmessage">Descibe Your Desire :</span><br>
+            
+            <textarea name="comment" rows="3" cols="30" style="margin-bottom: 10px;"></textarea><br><br>
+
+
+
+            <label for="Power">Power Source :</label>
+        <select name="Power" style="margin-bottom: 10px;" disabled>
+            <optgroup label="Money">
+                <option value="Toyota">Bat Man</option>
+                <option value="Ford">Iron Man</option>
+            </optgroup>
+            <optgroup label="Magic">
+                <option value="BMW">Doctor Strange</option>
+                <option value="Audi">DeadPool</option>
+            </optgroup>
+        </select><br>
+
+
+        <label for="car">Character DropDown :</label><br>
+        <select name="superhero" style="margin-bottom: 10px;" multiple>
+           
+                <option value="Bat Man">Bat Man</option>
+                <option value="Iron Man">Iron Man</option>
+           
+                <option value="Doctor Strange">Doctor Strange</option>
+                <option value="DeadPool">DeadPool</option>
+            
+        </select><br><br>
+
+
+        <datalist id="Superhero-list" style="margin-bottom: 10px;">
+            <option value="Bat Man"></option>
+                <option value="Iron Man"></option>
+           
+                <option value="Doctor Strange"></option>
+                <option value="DeadPool"></option>
+        </datalist>
+
+
+         <input type="text" name="superhero" list="Superhero-list" style="margin-bottom: 10px;">
+        <button onclick="alert('You are Logged in')">Login</button><br>
+
+
+        <button type="button" value="Click Here" onclick="alert('Welcome To SuperVerse')">Click Here</button>
+
+        <button type="submit">Submit</button>
+
+        <button type="reset">Reset</button>
+        <input type="image" src="Image/submit-button-png-9.png" alt="Submit"  width="100" style="margin-left: 10px; margin-bottom: -10px;">
+
+
+        
+
+        </fieldset>
+        </form>
+    </main>
+
+    <a  href="Chapter 4.Html" style="position: fixed; bottom: 20px; left: 20px; font-size: large; font-style: italic; font-family:'Trebuchet MS'; color: cadetblue;text-decoration: none;">Previous</a>
+
+
+    <a  href="Chapter 6.Html" style="position: fixed; bottom: 20px; right: 20px; font-size: large;font-style: italic; font-family:'Trebuchet MS'; color: maroon;text-decoration: none;">Next</a>
+    
+</body>
+</html>

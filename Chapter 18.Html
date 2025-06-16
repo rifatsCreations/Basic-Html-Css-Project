@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+
+.container{
+            border: 1px solid black;
+            width: 300px;
+            height: 100px;
+        }
+        .inline-blocks{
+            display: inline-block;
+            border: 1px solid red;
+            height: 40px;
+        }
+        .normal-blocks{
+            border: 1px solid blue;
+        }
+        .hidden{
+            display: none;
+        }
+        .invisible{
+            display: hidden;
+        }
+
+        img{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: cover;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: none;
+        }
+        img{
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: scale-down;
+        }
+
+
+        .my-element{
+            cursor: pointer;
+        }
+
+        .overflow{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: auto;
+        }
+        .child{
+            margin: 10px;
+            border: 1px solid black;
+            background-color: rgb(48, 100, 121);
+            height: 150px;
+            color: whitesmoke;
+        }
+
+
+         .container1{
+            background-color: rgb(72, 172, 117);
+            padding: 20px;
+            margin: 10px;
+        }
+        .container1.opacity{
+            opacity: 0.5;
+        }
+        .container1.transparent{
+            background-color: rgba(114, 48, 48, 0.616);
+        }
+        .child1{
+            border: 1px solid black;
+        }
+
+
+        .heading{
+            text-shadow: 3px 3px 5px rgb(42, 144, 161);
+        }
+        .shadow{
+            border: 1px solid black;
+            box-shadow: 8px 0 10px gray,0 8px 10px grey;
+        }
+
+        .newspaper {
+        column-count: 3;
+        column-gap: 40px;
+        column-rule:1px solid black;
+      
+        }
+        h2{
+            column-span: all;
+            text-align: center;
+        }
+
+
+        table{
+            border-collapse: collapse;
+            border: 1px solid green;
+            width: 100%;
+        }
+        th{
+            border: 1px solid red;
+            height: 30px;
+        }
+        td{
+            border: 1px solid blueviolet;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .col{
+            display: inline-block;
+            width: 150px;
+        }
+        ul.circle{
+            list-style: lower-latin;
+        }
+        ul.square{
+            list-style: square;
+        }
+        ol.upper-roman{
+            list-style-type: upper-roman; }
+        ol.lower-alpha{
+            list-style-type: lower-alpha;
+        }
+        .div2{
+            transform: rotate(180deg);
+        }
+        .div3{
+            transform: rotate(-20deg);
+        }
+
+    </style>
+</head>
+<body>
+     <nav style="background:#f0f0f0; padding:10px;">
+         <a href="index.html" style="background:#e0e0ff; color:blue; padding:5px 10px; text-decoration:none; border-radius:4px;">Home</a>
+        </nav>
+        
+    <Header>
+        <h1 style="text-align: center;">Chapter 18</h1><br><br>
+        </Header>
+
+        <main>
+
+            <div class="container">
+                <div class="inline-blocks"> First Number</div>
+                <div class="inline-blocks">Second Number</div>
+                <div class="normal-blocks">Third Number</div>
+               
+            </div>
+            <p>This is the the <span class="hidden">Hidden</span> block</p>
+            <p>This is the the <span class="invisible">Invisible</span> block</p><br><br><br><hr><br><br>
+
+            <img src="Image/SCOOBY-DOO_11.45.09.jpg"><br><br><br><hr><br><br>
+
+
+            <p class="my-element">Cartoon Network</p><br><br><br><hr><br><br>
+
+
+            <div class="overflow">
+                <div class="child">
+                    I never learned from a man who agreed with me
+                </div>
+            </div><br><br><br><hr><br><br>
+
+
+            <div class="container1">
+                <div class="child1">The beautiful thing about learning is nobody can take it away from you</div>
+            </div>
+            <div class="container1 opacity">
+                <div class="child1">The whole purpose of education is to turn mirrors into windows</div>
+            </div>
+            <div class="container1 transparent">
+                <div class="child1">A moment's insight is sometimes worth a life's experience</div>
+            </div><br><br><br><hr><br><br>
+
+
+            <h1  class="heading">Project Html & Css</h1>
+            <div class="shadow">My First Webpage</div><br><br><br><hr><br><br>
+
+
+           <div class="newspaper">
+            <h2>What is Life?</h2>
+        <p> Life? What is life? What is the meaning of life? Why are life is important? What is the purposeof life? These questions might never find the right or appropriate answers because thosequestions are so subjective. And now I always think that questions when I actually hear aboutlife. Everyone has a different way of viewing the definition of life. For me, life means to live in themoment and no worry to predict about our future. Life is like a book everyday a new page, everymonth is a new chapter and everyday is a series. Remember that life is actually like a book withan innumerable number of pages. These pages actually signify or represent the memories whichwe live in our life and also the ones which we will be living in the future. Each page is actually likea new chapter and a new start of every refreshing beginning in life. Life can also be consideredto be mysterious enough because every new page represents a new challenge or a new problemin life. It is our duty to solve them by applying our rational thinking and experience that we havegathered in the past. Actually, all of our lives are simply as a storybook, and therefore we mustmake every possible effort to make it a bestseller. Remember that when things go wrong, it
+            doesn’t mean that fortune will
+             never favor us anymore. Life is actually full of ups and downs, andwe need to acknowledge it or accept it as it comes to us.It means to strive to be your best at what you do and give it your best effort. It means tocherish every second you have with your family, friends, or relatives. It means to make an impacton a persons life. Life is an experience for us to try everything. For us to do what we like, alongwith what we don't like. When were take time to experience many things, what happens is thatwe become more aware of what is going on in the world, and in the minds of people. It providesan opportunity to relate and connect to more people in the world. Life has a meaning, It has itsown purpose. It is to fulfill your purpose in life and to accomplish your goals. Sometimes life isunfair, but you always have to stand up for yourself to accomplish your goals. Pandemic remindedme that life is important because of the pandemic I learned how important life is. When my mombecame positive in COVID disease I became even more worried about my life and the lives of thepeople I love.
+             
+            I don’t expect our country to have a big problem because of having this kind of disease. It is a
+            huge for each of us because until now we don't have a vaccine to prevent it. Because of this pandemic we could not go back to our normal lives. I know many of us doesn't have hope in lifebecause of this disease it will be reason why losing of their loved ones. And now I realized thatthe saying "Life is too short so live to the fullest" and probably I actually agree on it. That life is
+            only short so let’s do the things that will have good memories in our lives. Only God knows what
+            good plan he had for us. Let us trust him no matter what happens to us because he will doeverything okay to make our life back to normal. In order to enjoy life and live it to the fullest, itis essential to look at the very next page of our life and see what life has in stock for us. Turningthe next page simply means that we must sound optimistic in troublesome situations and handle
+            them with care and dedication. So life is too short so don’t let other people do what you ever you
+            want. Enjoy every moment in your life, let be free like a dove that they do what they want to goand fly so high..</p>
+            </div><br><br><br><hr><br><br>
+ 
+
+    <table>
+
+        <thead>
+
+             <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+
+               </tr>
+
+
+        </thead>
+
+        <tbody>
+                 <tr>
+                 
+                     <td>
+                        Rifat
+                     </td>
+
+                     <td>
+                        Hossain
+                     </td>
+
+                 </tr>
+
+                 <tr>
+                 
+                    <td>
+                       Ibne
+                    </td>
+
+                    <td>
+                       Batuta
+                    </td>
+
+                </tr>
+
+
+        </tbody>
+
+
+
+    </table><br><br><br><hr><br><br>
+
+
+    <div class="col">
+        <p>Unordered List</p>
+        <ul>
+            <li>Roll 1</li>
+            <li>Roll 2</li>
+            <li>Roll 3</li>
+        </ul>
+        <ul class="circle">
+            <li>Roll 1</li>
+            <li>Roll 2</li>
+            <li>Roll 3</li>
+        </ul>
+        <ul class="square">
+            <li>Roll 1</li>
+            <li>Roll 2</li>
+            <li>Roll 3</li>
+        </ul>
+            </div>
+            <div class="col">
+                <p>Ordered List</p>
+                <ol>
+                    <li>Roll 1</li>
+                    <li>Roll 2</li>
+                    <li>Roll 3</li>
+                </ol>
+                <ol class="upper-roman">
+                    <li>Roll 1</li>
+                    <li>Roll 2</li>
+                    <li>Roll 3</li>
+                </ol>
+                <ol class="lower-alpha">
+                    <li>Roll 1</li>
+                    <li>Roll 2</li>
+                    <li>Roll 3</li>
+                </ol>
+                    </div><br><br><br><hr><br><br>
+
+
+                    <body>
+                        <div>Create</div>
+                    <div class="test">Life</div>
+                    <div class="div2">Money</div>
+                    <div class="div3">Death</div>
+                    </body>
+
+
+
+
+
+
+            
+        </main>
+
+
+        <a  href="Chapter 17.Html" style="position: fixed; bottom: 20px; left: 20px; font-size: large; font-style: italic; font-family:'Trebuchet MS'; color: cadetblue;text-decoration: none;">Previous</a>
+
+        <a  href="Chapter 19.Html" style="position: fixed; bottom: 20px; right: 20px; font-size: large;font-style: italic; font-family:'Trebuchet MS'; color: maroon;text-decoration: none;">Next</a>
+    
+</body>
+</html>

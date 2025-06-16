@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        #my-text {
+color: red;
+}
+
+body * .article {
+color: rgb(180, 17, 230);
+}
+
+.my-text {
+color: rgb(164, 180, 22);
+}
+
+h3 {
+color: rgb(6, 107, 201);
+}
+
+
+
+
+.interaction:focus {
+color: red;
+}
+.interaction:hover {
+color: green;
+}
+.interaction:active {
+color: blue;
+}
+
+.elements:enabled {
+background-color: cyan;
+}
+.elements:disabled {
+background-color: #ccc;
+}
+
+input:invalid {
+background-color: lightpink;
+}
+
+ input:checked + span {
+color: red;
+}
+
+input:required {
+background-color: lightgreen;
+}
+input:out-of-range {
+background-color: lightblue;
+}
+
+
+.first:first-child {
+color: rgb(65, 134, 19);
+}
+
+.last:last-child {
+color: red;
+}
+
+.nth:nth-child(2) {
+color: red;
+}
+:target {
+border: 1px solid rgb(54, 142, 214);
+}
+
+.firstelement::first-letter {
+font-size: 30px;
+color: rgba(100, 26, 26, 0.932);
+}
+.firstline::first-line {
+color: rgb(206, 26, 197);
+}
+
+.required::before {
+content: "* ";
+color: red;
+}
+
+.text::selection {
+color: rgb(110, 21, 21);
+background-color: rgb(119, 183, 202);
+}
+
+[class="my-texts"] {
+color: rgb(214, 90, 148);
+}
+
+[class|="new"] {
+color: rgb(214, 90, 148);
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+     <nav style="background:#f0f0f0; padding:10px;">
+         <a href="index.html" style="background:#e0e0ff; color:blue; padding:5px 10px; text-decoration:none; border-radius:4px;">Home</a>
+        </nav>
+        
+    <Header>
+        <h1 style="text-align: center;">Chapter 12</h1><br><br>
+        </Header>
+
+        <main>
+      <!-- id -->
+    <div>
+        <p id="my-text"> "A man with nothing to fear is a man with nothing to love."</p>
+        </div>
+         
+        <!-- Universel -->
+        <div>
+            <article class="article">"Madness is the emergency exit. You can just step outside, and close the door on all those dreadful things that happened. You can lock them away forever."</article>
+        </div>
+              
+        <!-- class -->
+            <div>
+                <h3 class="my-text">"This is what happens when an unstoppable force meets an immovable object." </h3> 
+           </div>
+
+             <!-- Type -->
+           <div>
+            <p> "It's a funny world we live in."</p>
+           </div>
+            <p> "My mother always tells me to smile and put on a happy face. She told me I had a purpose to bring laughter and joy to the world." — Joker</p>
+
+
+            
+               <!-- Pseudo -->
+            <button>This is a Button</button><br><br>
+
+
+            <button class="interaction" style="border-radius: 5px;">Button</button>
+
+         
+                     <!-- disabled -->
+        <div >
+            <p class="elements"> User's information</p>
+            <p class="elements">Username: <input class="elements" type="text" value="username" disabled />
+            </p>
+             <p class="elements">Email: <input class="elements" type="text" value="email@company.com" /></p>
+        </div>
+
+          <!-- invalid -->
+        <form action="">
+            <p>This text input must be a three-letter code:</p>
+            <input type="text" name="code" pattern="[A-Za-z]{3}"
+            title="Three letter code." value="a" />
+            </form>
+            
+            <!-- Checked -->
+
+            <div >
+
+            <p >Select your options:</p>
+            <p>
+            Gender:
+            <label ><input type="radio" name="gender" />
+            <span>Male</span></label>
+            <label><input type="radio" name="gender" />
+            <span>Female</span></label>
+            </p>
+            <p>
+            <label ><input type="checkbox" /> <span>Accept the
+            agreement</span></label>
+            </p>
+
+            </div>
+
+             <!-- required -->
+             <div>
+            <form action="">
+                <p>This text input is required:</p>
+                <input type="text" name="fname" required />
+                </form>
+            </div>
+
+
+            <!-- out of range -->
+
+            <div>
+                    <form action="">
+                     <p>This number input must be in the range of 1 - 6:</p>
+                    <input type="number" name="quantity" min="1" max="6"
+                    value="8" />
+                    </form>
+                    
+            </div>
+
+
+            <!-- first child -->
+
+            <div >
+                <p class="first">Item 1</p>
+                <p class="first">Item 2</p>
+                </div>
+                <p class="first">Item 3</p>
+                <p class="first">Item 4</p><br>
+
+
+                <!-- last child -->
+
+
+                <div>
+                    <p class="last">Line 1</p>
+                    <p class="last">Line 2</p>
+                    </div>
+                    <p class="last">Line 3</p>
+                    <p class="last">Line 4</p><br>
+
+
+                 <!-- nth child -->
+
+                 <div>
+                    <p class="nth" >paragraph 1</p>
+                    <p class="nth">paragraph 2</p>
+                    <p class="nth">paragraph 3</p>
+                    </div>
+                    <p class="nth">paragraph 4</p>
+                    <p class="nth">paragraph 5</p>
+                    <p class="nth">paragraph 6</p>
+
+
+
+            <!-- target -->
+
+            <a href="#target1">First paragraph target</a><br>
+            <a href="#target2">Second paragraph target</a>
+            <p id="target1">First paragraph</p>
+            <p id="target2">Second paragraph</p>
+
+
+
+            <!-- first letter -->
+
+            <div >
+                <h1 class="firstelement">My heading</h1>
+                <p class="firstelement">My paragraph</p>
+            </div>
+
+
+            <!-- first line -->
+
+            <div>
+                <p class="firstline">My life is<br />beautiful.</p>
+            </div>
+
+
+            <!-- before -->
+
+
+            <div>
+
+                <p>
+                    <label class="required">Username: </label>
+                    <input type="text" />
+                    </p>
+                    <p>
+                    <label>Email: </label>
+                    <input type="text" />
+                    </p>
+            </div>
+
+
+            <!-- selection -->
+
+
+            <div>
+                <p class="text">New Bangladesh</p>
+            </div>
+
+                <!-- attiibute value -->
+
+                <div>
+                <p class="my-texts">Hello World</p>
+                </div>
+                <p class="another-texts">Bye World</p>
+                </body>
+
+
+
+                <!-- attiibute value -->
+
+
+                <p>[class|="new"] { color: red; }</p>
+                <p class="new">New class: "New"</p>
+                <p class="highlight new">New class: "highlight new"</p>
+                <p class="new highlight">New class: "new highlight"</p>
+                <p class="highlight-new">New class: "highlight-new"</p>
+                <p class="new-highlight">New class: "new-highlight"
+                </p>
+                <p class="news">Word class: "news"</p><br><br>
+
+
+        </main>
+
+
+        <a  href="Chapter 11.Html" style="position: fixed; bottom: 20px; left: 20px; font-size: large; font-style: italic; font-family:'Trebuchet MS'; color: cadetblue;text-decoration: none;">Previous</a>
+
+        <a  href="Chapter 13.Html" style="position: fixed; bottom: 20px; right: 20px; font-size: large;font-style: italic; font-family:'Trebuchet MS'; color: maroon;text-decoration: none;">Next</a>
+
+    
+</body>
+</html>

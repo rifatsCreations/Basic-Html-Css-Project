@@ -1,0 +1,22 @@
+.external img{
+    border: 2px solid black ;
+    height: 300px;
+    width: 600px;
+    object-fit: cover;
+}
+
+h2{
+    text-align: center;
+    font-family:  'Trebuchet MS';
+    color: whitesmoke;
+    background-color: rgb(224, 173, 79);
+}
+.text{
+    column-count: 3;
+    column-gap: 40px;
+    column-rule:1px solid black;
+  
+}
+
+
+

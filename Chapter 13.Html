@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascading</title>
+    <style>
+
+
+#heading-one {
+color: violet;
+}
+
+.heading.first {
+color: indigo;
+}
+
+main .heading {
+color: blue;
+}
+
+.heading {
+color: green;
+}
+
+main h2 {
+color: yellow;
+}
+
+h2 {
+color: orange;
+}
+
+* div {
+color: red;
+}
+#heading-one {
+color: green !important;
+ }
+
+ .parent1 {
+color: rgb(34, 116, 131);
+}
+.line {
+color: rgb(194, 43, 149);
+}
+.first-line {
+color: inherit;
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    <Header>
+         <nav style="background:#f0f0f0; padding:10px;">
+         <a href="index.html" style="background:#e0e0ff; color:blue; padding:5px 10px; text-decoration:none; border-radius:4px;">Home</a>
+        </nav>
+        
+        <h1 style="text-align: center;">Chapter 13</h1><br><br>
+        </Header>
+
+        <div>
+
+            <article class="parent"> <h1 id="heading-one" class="heading first">Life is beautiful</h1>
+                <p>Life is cruel</p>
+                <h2 id="heading-two" class="heading">Life is cruel</h2>
+                <p>Life is beautiful</p></article><br><hr>
+
+            </div>
+
+
+                <article class="parent1">
+                    <h1>Life</h2>
+                    <p class="line first-line">Live Your Life.</p>
+                    <p class="line second-line">Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep</p>
+                    </article>
+                    
+           
+
+
+
+
+        </main>
+
+        <a  href="Chapter 12.Html" style="position: fixed; bottom: 20px; left: 20px; font-size: large; font-style: italic; font-family:'Trebuchet MS'; color: cadetblue;text-decoration: none;">Previous</a>
+
+        <a  href="Chapter 14.Html" style="position: fixed; bottom: 20px; right: 20px; font-size: large;font-style: italic; font-family:'Trebuchet MS'; color: maroon;text-decoration: none;">Next</a>
+    
+</body>
+</html>
